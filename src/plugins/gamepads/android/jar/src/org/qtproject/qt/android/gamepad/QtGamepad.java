@@ -1,4 +1,4 @@
-/****************************************************************************
+/*
 **
 ** Copyright (C) 2015 BogDan Vatra <bogdan@kde.org>
 ** Contact: http://www.qt.io/licensing/
