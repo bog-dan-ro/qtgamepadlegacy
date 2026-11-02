@@ -19,6 +19,10 @@ qt_internal_add_jar(QtAndroidGamepad
     OUTPUT_DIR "${QT_BUILD_DIR}/jar"
 )
 
+# Building a consumer's APK target must also build the JAR advertised in this
+# module's Android deployment metadata, without relying on an earlier all build.
+add_dependencies(GamepadLegacy QtAndroidGamepad)
+
 install_jar(QtAndroidGamepad
     DESTINATION jar
     COMPONENT Devel
